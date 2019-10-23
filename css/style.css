@@ -1,0 +1,241 @@
+/*********** CSS Styles for My Portfolio Website ***********/
+/*********** Author: Bernice N Ebenezer **********/
+/*********** Date: 10/22/2018 ********************/
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper{
+    width:100%;
+    min-height: 100vh;
+    background-color:white;
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-around;
+}
+
+.left{
+    width:45%;
+    padding-top:5em;
+    background-color:white;
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.right{
+    width:50%;
+    background-color:white;
+    display:flex;
+}
+
+.name{
+    font-family: 'Fascinate Inline', cursive;
+    color:#565656;
+    font-size:1.1em;
+    padding-top:1em;
+}
+
+.role{
+    color:#EBA6A9;
+    font-family: 'Lobster', cursive;
+    font-size:1.2em;
+}
+
+/*.skills{
+    margin-top:1em;
+}*/
+
+.hero-img{
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    opacity:0.8;
+}
+
+
+
+.skills {
+  width: 75%;
+  height: 27.5rem;
+  background-color: white;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+/*
+.animation-container {
+  width: 1000rem;
+  height: 30rem;
+}
+*/
+@keyframes topFadeOut {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bottomFadeOut {
+  0% {
+    position: absolute;
+    bottom: -5rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    bottom: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+}
+
+@keyframes topFadeOutVertical {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 45%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rightFadeInOut {
+  0% {
+    position: absolute;
+    right: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    right: 10rem;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    right: 10rem;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+.skill-label1 {
+  font-size: 7.4rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 5rem;
+  opacity: 0;
+  animation-name: topFadeOut;
+  animation-duration: 5s;
+  color: #787878;
+  animation-iteration-count:infinite;
+}
+
+.skill-label2{
+  font-size: 3.4rem;
+  position: absolute;
+  top: 8.5rem;
+  opacity: 0;
+  animation-name: rightFadeInOut;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  color: #C4A29E;
+  animation-iteration-count:infinite;
+}
+
+.skill-label3 {
+  transform: rotate(-90deg);
+  font-size: 2rem;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  opacity: 0;
+  animation-name: topFadeOutVertical;
+  animation-delay: 7.5s;
+  animation-duration: 6s;
+  color: #A3DDF0;
+  white-space: nowrap;
+  animation-iteration-count:infinite;
+}
+
+.skill-label4 {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  opacity: 0;
+  color: #EBA6A9;
+  animation-name: fadeInOut;
+  animation-delay: 8.5s;
+  animation-duration: 9s;
+  animation-iteration-count:infinite;
+}
+
+.skill-label5 {
+  font-size: 5rem;
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
+  opacity: 0;
+  color: #F40076;
+  animation-name: bottomFadeOut;
+  animation-delay: 10s;
+  animation-duration: 9s;
+  animation-iteration-count:infinite;
+}
+
+.skill-label6 {
+  transform: rotate(-90deg);
+  font-size: 2rem;
+  position: absolute;
+  left: 75%;
+  top: 65%;
+  opacity: 0;
+  animation-name: topFadeOutVertical;
+  animation-delay: 12s;
+  animation-duration: 9s;
+  color: #FFC6AC;
+  white-space: nowrap;
+  animation-iteration-count:infinite;
+}
